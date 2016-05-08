@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint DKUIView+Extension.podspec' to ensure this is a
+#  Be sure to run `pod spec lint DKUIViewExtension.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "DKUIViewExtension"
   s.version      = "1.0"
-  s.summary      = "DKUIView+Extension"
+  s.summary      = ""
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,10 +25,9 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                    DKUIViewExtension
                    DESC
 
-  s.homepage     = "http://github.com/liudukun/DKUIViewExtension"
+  s.homepage     = "https://github.com/liudukun/DKUIViewExtension"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -64,7 +63,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-    s.platform     = :ios
+  # s.platform     = :ios
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
@@ -80,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-s.source       = { :git => "git@github.com:liudukun/DKUIViewExtension.git",:tag => "1.0" }
+  s.source       = { :git => "https://github.com/liudukun/DKUIViewExtension.git", :tag => "1.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +90,7 @@ s.source       = { :git => "git@github.com:liudukun/DKUIViewExtension.git",:tag 
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "DKUIViewExtension", "DKUIViewExtension/**/*.{h,m}"
+  s.source_files  = "", "/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
