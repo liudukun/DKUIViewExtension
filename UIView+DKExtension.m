@@ -75,4 +75,54 @@
 {
     return self.frame.origin;
 }
+
+// centerX
+- (void)setCenterX:(CGFloat)centerX
+{
+    CGPoint center = self.center;
+    center.x = centerX;
+    self.center = center;
+}
+- (CGFloat)centerX
+{
+    return self.center.y;
+}
+
+// centerY
+- (void)setCenterY:(CGFloat)centerY
+{
+    CGPoint center = self.center;
+    center.y = centerY;
+    self.center = center;
+}
+- (CGFloat)centerY
+{
+    return self.center.y;
+}
+
+
+/**
+ * 获取到所在的控制器
+ */
+- (UIViewController*)viewController {
+    for (UIView* next = [self superview]; next; next = next.superview)
+    {
+        UIResponder* nextResponder = [next nextResponder];
+        
+        if ([nextResponder isKindOfClass:[UIViewController class]])
+        {
+            return (UIViewController*)nextResponder;
+        }
+    }
+    return nil;
+}
+
+- (void)setCornerRadius:(CGFloat)radius andBorderColor:(UIColor *)color andBorderWidth:(CGFloat)width
+{
+    self.layer.cornerRadius = radius;
+    self.layer.borderColor = color.CGColor;
+    self.layer.borderWidth = width;
+    self.clipsToBounds = YES;
+}
+
 @end

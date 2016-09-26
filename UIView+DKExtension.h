@@ -9,4 +9,17 @@
 @property (assign, nonatomic) CGFloat dk_h;
 @property (assign, nonatomic) CGSize dk_size;
 @property (assign, nonatomic) CGPoint dk_origin;
+@property(nonatomic, assign) CGFloat centerX;
+@property(nonatomic, assign) CGFloat centerY;
+
+/**
+ * 获取到所在的控制器
+ */
+- (UIViewController *)viewController;
+
+/**
+ * 设置圆角
+ */
+- (void)setCornerRadius:(CGFloat)radius andBorderColor:(UIColor *)color  andBorderWidth:(CGFloat)width;
+
 @end
