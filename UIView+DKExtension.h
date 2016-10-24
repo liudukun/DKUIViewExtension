@@ -2,7 +2,12 @@
 
 #import <UIKit/UIKit.h>
 
+#define ScreenHeight [[UIScreen mainScreen] bounds].size.height //主屏幕的高度
+#define ScreenWidth  [[UIScreen mainScreen] bounds].size.width  //主屏幕的宽度
+
+
 @interface UIView (DKExtension)
+
 @property (assign, nonatomic) CGFloat dk_x;
 @property (assign, nonatomic) CGFloat dk_y;
 @property (assign, nonatomic) CGFloat dk_w;
@@ -11,6 +16,8 @@
 @property (assign, nonatomic) CGPoint dk_origin;
 @property(nonatomic, assign) CGFloat centerX;
 @property(nonatomic, assign) CGFloat centerY;
+@property(nonatomic, assign) CGFloat contentW;
+@property(nonatomic, assign) CGFloat contentH;
 
 /**
  * 获取到所在的控制器

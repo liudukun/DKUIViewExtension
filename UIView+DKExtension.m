@@ -76,6 +76,28 @@
     return self.frame.origin;
 }
 
+- (void)setContentH:(CGFloat)contentH{
+    UIScrollView *scrollView = (UIScrollView *)self;
+    CGSize contentSize = scrollView.contentSize;
+    scrollView.contentSize = CGSizeMake(contentSize.width, contentH);
+}
+
+- (CGFloat)contentH{
+    UIScrollView *scrollView = (UIScrollView *)self;
+    return scrollView.contentSize.height;
+}
+
+- (void)setContentW:(CGFloat)contentW{
+    UIScrollView *scrollView = (UIScrollView *)self;
+    CGSize contentSize = scrollView.contentSize;
+    scrollView.contentSize = CGSizeMake(contentW, contentSize.height);
+}
+
+- (CGFloat)contentW{
+    UIScrollView *scrollView = (UIScrollView *)self;
+    return scrollView.contentSize.width;
+}
+
 // centerX
 - (void)setCenterX:(CGFloat)centerX
 {
@@ -116,6 +138,8 @@
     }
     return nil;
 }
+
+
 
 - (void)setCornerRadius:(CGFloat)radius andBorderColor:(UIColor *)color andBorderWidth:(CGFloat)width
 {
