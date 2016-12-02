@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.summary      = 'DKUIViewExtension'
   s.description  = 'DKUIViewExtension DKUIViewExtension DKUIViewExtension'
   s.homepage     = 'https://github.com/liudukun/DKUIViewExtension'
-  s.license      = { :type => 'MIT', :file => 'LICENSE.txt' }
+  s.license      = { :file => 'license.txt' }
   s.author       = { 'liudukun' => 'liudukun@126.com' }
   s.source       = { :git => 'https://github.com/liudukun/DKUIViewExtension.git‘, :tag => "v#{s.version}" }
   s.ios.deployment_target = '4.0'
