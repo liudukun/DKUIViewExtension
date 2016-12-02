@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'DKUIViewExtension'
-  s.version      = ‘1.0’
+  s.version      = ‘2.0’
   s.summary      = ‘for liudukun DKUIViewExtension'
   s.description  = 'DKUIViewExtension for liudukn DKUIViewExtension DKUIViewExtension'
   s.homepage     = 'https://github.com/liudukun/DKUIViewExtension'
