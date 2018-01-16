@@ -18,6 +18,13 @@
 @property(nonatomic, assign) CGFloat centerY;
 @property(nonatomic, assign) CGFloat contentW;
 @property(nonatomic, assign) CGFloat contentH;
+@property (nonatomic) CGFloat x;
+@property (nonatomic) CGFloat y;
+@property (nonatomic) CGFloat width;
+@property (nonatomic) CGFloat height;
+
+@property (nonatomic, assign) CGPoint origin;
+@property (nonatomic, assign) CGSize size;
 
 /**
  * 获取到所在的控制器
